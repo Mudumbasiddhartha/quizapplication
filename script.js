@@ -1,7 +1,7 @@
 
 
     var time = 15 * 60;
-    let status =1;
+    let counter =1;
     var timer = setInterval(function () {
 
         var minutes = parseInt(time / 60, 10);
@@ -56,8 +56,8 @@
             // Get data attributes
             current = $(this).parents('form:first').data('question');
             next = $(this).parents('form:first').data('question') + 1;
-            status=status+1;
-            console.log(status);
+            counter=counter+1;
+            console.log(counter);
             // Hide all questions
             $('.questionForm').hide();
             // Show next question
@@ -69,6 +69,12 @@
             // if($('input[name=q' + current + ']:checked').val() == undefined){
             //     $('input[name=q' + current + ']:checked').val() = null;
             // }
+            if(counter ==11){
+                time =15*60;
+            }
+            if ( counter == 16){
+                time=8*60;
+            }
 
 
             return false;
@@ -79,8 +85,8 @@
             // Get data attributes
             current = $(this).parents('form:first').data('question');
             next = $(this).parents('form:first').data('question') - 1;
-            status=status-1;
-            console.log(status);
+            counter=counter-1;
+            console.log(counter);
             // Hide all questions
             $('.questionForm').hide();
             // Show next question
@@ -91,53 +97,53 @@
         });
         // conituously check if current question <10 and time is 0
         setInterval(function () {
-            if (status <=10 && time == 0) {
-                process(status);
+            if (counter <=10 && time == 0) {
+                process(counter);
 
-                time = 0.1* 60;
-                document.getElementById("round_no").innerHTML = "Round 2";
+                time = 15* 60;
+                document.getElementById("round_no").innerHTML = "Round 2 - General Knowledge";
                 // display 10th question
                 $('.questionForm').hide();
                 $('#q11').fadeIn(300);
-                status=11;
+                counter=11;
                 // process('' + current + '');
 
 
                 return false;
             }
-            if ((status > 10 && status<=15) && time == 0) {
+            if ((counter > 10 && counter<=15) && time == 0) {
                 $('.questionForm').hide();
                 time=15*60;
                 $('#q16').fadeIn(300);
-                status=16;
-                process(status);
-                console.log(status);
+                counter=16;
+                process(counter);
+                console.log(counter);
                 return false;
             }
-            if(status>=16 && time==0){
+            if(counter>=16 && time==0){
                 time=8*60
                 $('.questionForm').hide();
                 // stop the timer
                 $('#time').hide();
                 console.log("hidden");
-                status=20;
-                process(status);
+                counter=20;
+                process(counter);
                 // make the unanswered questions undefined and consider them answered
                 
                 return false;
             }
-            if (status == 11) {
-                document.getElementById("round_no").innerHTML = "Round 2";
+            if (counter == 11) {
+                document.getElementById("round_no").innerHTML = "Round 2 - General Knowledge";
                 return false;
 
             }
-            if (status == 16) {
+            if (counter == 16) {
                 
                 // process(16);
-                document.getElementById("round_no").innerHTML = "Round 3";
+                document.getElementById("round_no").innerHTML = "Round 3 - Logo Identification";
                 return false;
             }
-            if(status == 21){
+            if(counter == 21){
                 process(20);
                 document.getElementById("round_no").innerHTML = "Results";
                 return false;
