@@ -1,0 +1,141 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f1f1f1;
+    }
+
+    header {
+        /* background-color: rgb(72, 72, 187); */
+        background-image: linear-gradient(to right, #031d36, #3c739b, #042840);
+        height: 90px;
+        display: flex;
+        /* justify-content: center; */
+
+        text-align: center;
+        align-items: center;
+        color: whitesmoke;
+
+    }
+
+    header h2 {
+        display: flex;
+        margin-left: 28vw;
+        text-align: center;
+
+    }
+
+    header img {
+        float: left;
+        height: 100%;
+        margin-left: 0.25vw;
+
+    }
+
+    footer {
+        height: 60px;
+        display: flex;
+        text-align: center;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        margin-top: 20vh;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, #031d36, #3c739b, #042840);
+        color: whitesmoke;
+        z-index: 2;
+    }
+
+    footer h3 a {
+        /* text-decoration: none; */
+        color: whitesmoke;
+    }
+
+    #picture {
+        margin-left: 0.1vw;
+        height: 100%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        display: flex;
+        margin-right: 0;
+        padding-right: 0;
+        float: left;
+    }
+
+    #picture img {
+        height: 100%;
+    }
+
+    #creds {
+        margin-left: 0.1vw;
+        height: 100%;
+        margin-top: 30vh;
+        margin-bottom: 10vh;
+        margin-right: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        float: right;
+    }
+
+    .form-signin {
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .form-signin::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+    }
+
+    .form-signin {
+        max-width: 330px;
+        padding: 15px;
+        overflow: scroll;
+    }
+
+    .form-signin .form-floating:focus-within {
+        z-index: -1;
+    }
+
+    .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .form-signin,
+    w-100,
+    m-auto {
+        text-align: center;
+        margin-top: 100vh;
+
+    }
+
+    form {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    @media only screen and (max-width: 600px) {
+        header h2 {
+            display: flex;
+            margin-left: 0vw;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        
+    }

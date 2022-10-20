@@ -1,0 +1,117 @@
+body {
+    background-color: #f1f1f1;
+}
+
+header {
+    /* background-color: rgb(72, 72, 187); */
+    background-image: linear-gradient(to right, #031d36, #3c739b, #042840);
+    height: 90px;
+    display: flex;
+    /* justify-content: center; */
+
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+
+}
+
+header h2 {
+    display: flex;
+    margin-left: 28vw;
+    text-align: center;
+
+}
+
+header img {
+    float: left;
+    height: 100%;
+    margin-left: 0.25vw;
+
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 2px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #031d36, #3c739b, #042840);
+    color: whitesmoke;
+}
+
+footer h3 a {
+    /* text-decoration: none; */
+    color: whitesmoke;
+}
+
+.jumbotron {
+    padding-top: 0px;
+    text-align: center;
+}
+
+.questionForm {
+
+    margin-left: 5vw;
+    overflow: scroll;
+    line-height: 5vh;
+}
+
+.questionForm {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.questionForm::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.questionForm input {
+    margin-left: 1vw;
+    margin-right: 0;
+    padding-right: 0;
+
+}
+
+#round1 {
+    margin-bottom: 20vh;
+}
+
+.option {
+    margin-left: 5vw;
+}
+
+#submit {
+    /* margin-right: 200px; */
+    margin-top: 20px;
+    padding-left: 12px;
+    /* padding-right: 12px; */
+    width: 7.253vw;
+}
+
+button {
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+
+main {
+    overflow: scroll;
+}
+.ques-container {
+    display: flex;
+}
+.logo-img {
+    width: 100px;
+    height:auto;
+}
+.logo-img img {
+    width: 100%;
+    height: 100%;
+}

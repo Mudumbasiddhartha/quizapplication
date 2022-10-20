@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="title">Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_es.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_fr.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_it.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_ja.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_nl.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/localization/messages_pt_BR.min.js"></script>
+ <link rel="stylesheet" href="testcss.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+
+        <img src="imgs/android-chrome-192x192.png" alt="vitlogo">
+        <h2>VIT ENTRANCE EXAMINATION</h2>
+    </header>
+    <div class="container">
+        <div class="jumbotron">
+            <h2 id="round_no">Round-1 : General Science </h2>
+            <p id="time">Time left: <span id="timer"></span></p>
+        </div>
+        <div id="round1">
+            <form class="questionForm" id="q1" data-question="1">
+                <h2>1) Which among the following Vitamins helps in clotting of Blood?</h2>
+                <input type="radio" name="q1" value="a"> Vitamin C<br>
+                <input type="radio" name="q1" value="b"> Vitamin D<br>
+                <input type="radio" name="q1" value="c"> Vitamin E<br>
+                <input type="radio" name="q1" value="d"> Vitamin K<br>
+
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q2" data-question="2">
+                <h2>2) Which among the following element is an essential constituent of acids?</h2>
+                <input type="radio" name="q2" value="a"> Nitrogen<br>
+                <input type="radio" name="q2" value="b"> Hydrogen<br>
+                <input type="radio" name="q2" value="c"> Oxygen<br>
+                <input type="radio" name="q2" value="d"> Helium<br>
+                <!-- make a button for previous question -->
+                <button id="prev" , class="btn btn-primary">previous</button>
+
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q3" data-question="3">
+                <h2>3) Which among the following is correct about Saliva of a Healthy Human?</h2>
+                <input type="radio" name="q3" value="a"> It is slightly acidic <br>
+                <input type="radio" name="q3" value="b"> It is slightly saline <br>
+                <input type="radio" name="q3" value="c"> It is slightly alkaline <br>
+                <input type="radio" name="q3" value="d"> It is neutral <br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q4" data-question="4">
+                <h2>4) Which among the following is the edible part in Rice?</h2>
+                <input type="radio" name="q4" value="a"> Fruit<br>
+                <input type="radio" name="q4" value="b"> Cotyledons<br>
+                <input type="radio" name="q4" value="c"> Endosperm<br>
+                <input type="radio" name="q4" value="d"> Embryo<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q5" data-question="5">
+                <h2>5) A plant that grows in waters of high salinity is called ?</h2>
+                <input type="radio" name="q5" value="a"> Halophytes<br> 
+                <input type="radio" name="q5" value="b"> Oxylophytes<br>
+                <input type="radio" name="q5" value="c"> Psammophytes<br>
+                <input type="radio" name="q5" value="d"> Chasmophytes<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q6" data-question="6">
+                <h2>6) A projectile will achieve maximum horizontal range at which angle?</h2>
+                <input type="radio" name="q6" value="a"> 90 degrees <br>
+                <input type="radio" name="q6" value="b"> 60 degrees<br>
+                <input type="radio" name="q6" value="c"> 45 degrees<br>
+                <input type="radio" name="q6" value="d"> 30 degrees<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q7" data-question="7">
+                <h2>7) What is the name of the process by which a plant makes its own food?</h2>
+                <input type="radio" name="q7" value="a"> Photosynthesis<br>
+                <input type="radio" name="q7" value="b"> Respiration<br>
+                <input type="radio" name="q7" value="c"> Transpiration<br>
+                <input type="radio" name="q7" value="d"> Germination<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q8" data-question="8">
+                <h2>8) Which of the following part of eyes controls the size of the pupil?</h2>
+                <input type="radio" name="q8" value="a"> Retina<br>
+                <input type="radio" name="q8" value="b"> iris<br>
+                <input type="radio" name="q8" value="c"> Cornea<br>
+                <input type="radio" name="q8" value="d"> None of the above<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q9" data-question="9">
+                <h2>9) Which of these non-metals is mainly used as an inert shielding gas?</h2>
+                <input type="radio" name="q9" value="a"> Xenon<br>
+                <input type="radio" name="q9" value="b"> Hydrogen<br>
+                <input type="radio" name="q9" value="c"> Argon<br>
+                <input type="radio" name="q9" value="d"> Krypton<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q10" data-question="10">
+                <h2>10) Which acid is present in lemon?</h2>
+                <input type="radio" name="q10" value="a"> Marlic Acid<br>
+                <input type="radio" name="q10" value="b"> Citric Acid<br>
+                <input type="radio" name="q10" value="c"> lactic Acid<br>
+                <input type="radio" name="q10" value="d"> tartaric Acid<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q11" data-question="11">
+                <h2>1) Taxila was the capital of which ancient Mahajanpada ?</h2>
+                <input type="radio" name="q11" value="a"> Gandhar<br>
+                <input type="radio" name="q11" value="b"> Anga<br>
+                <input type="radio" name="q11" value="c"> Magadha<br>
+                <input type="radio" name="q11" value="d"> Kasi<br>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q12" data-question="12">
+                <h2>2) Who among the following rulers of Gupta dynasty started Gupta Era?</h2>
+                <input type="radio" name="q12" value="a"> Vishnugupta<br>
+                <input type="radio" name="q12" value="b"> Chandragupta I<br>
+                <input type="radio" name="q12" value="c"> Skandgupta<br>
+                <input type="radio" name="q12" value="d"> Samudragupta<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q13" data-question="13">
+                <h2>3) Which among the following ruler is known for Junagarh Rock Inscription?</h2>
+                <input type="radio" name="q13" value="a"> Rudradaman I<br>
+                <input type="radio" name="q13" value="b"> Jivadaman<br>
+                <input type="radio" name="q13" value="c"> Damajadasri<br>
+                <input type="radio" name="q13" value="d"> Jayadaman<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q14" data-question="14">
+                <h2>4) Who is the current Prime Minister of India?</h2>
+                <input type="radio" name="q14" value="a"> Narendra Modi<br>
+                <input type="radio" name="q14" value="b"> Manmohan Singh<br>
+                <input type="radio" name="q14" value="c"> Arvind Kejrival<br>
+                <input type="radio" name="q14" value="d"> Sonia Gandhi<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q15" data-question="15">
+                <h2>5) Who is the current President of India?</h2>
+                <input type="radio" name="q15" value="a"> Draupadi Murmu<br>
+                <input type="radio" name="q15" value="b"> Pranabh Mukherjee<br>
+                <input type="radio" name="q15" value="c"> NV Ramana<br>
+                <input type="radio" name="q15" value="d"> Amit Shah<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+
+                <input type="submit" class="btn btn-primary" id="submit" value="Submit">
+            </form>
+            <form class="questionForm" id="q16" data-question="16">
+                <div class="ques-container">
+                    <h2>1) Identify the logo.</h2>
+                <div class="logo-img">
+                    <img src="https://tinyurl.com/yc454uay" alt="logo1">
+                </div>
+                </div>
+                <input type="radio" name="q16" value="a"> Google<br>
+                <input type="radio" name="q16" value="b"> Django<br>
+                <input type="radio" name="q16" value="c"> Facebook<br>
+                <input type="radio" name="q16" value="d"> Github<br>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q17" data-question="17">
+                <div class="ques-container">
+                    <h2>2) Identify the logo.</h2>
+                    <div class="logo-img">
+                        <img src="https://tinyurl.com/muzz26m7" alt="logo2">
+                    </div>
+                </div>
+                <input type="radio" name="q17" value="a"> Sketchers<br>
+                <input type="radio" name="q17" value="b"> Adidas<br>
+                <input type="radio" name="q17" value="c"> Nike<br>
+                <input type="radio" name="q17" value="d"> Reebok<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q18" data-question="18">
+                <div class="ques-container">
+                    <h2>3) Identify the logo.</h2>
+                    <div class="logo-img">
+                        <img src="https://tinyurl.com/4jcr5brm" alt="logo3">
+                    </div>
+                </div>
+                <input type="radio" name="q18" value="a"> Starbucks<br>
+                <input type="radio" name="q18" value="b"> CCD<br>
+                <input type="radio" name="q18" value="c"> Walmart<br>
+                <input type="radio" name="q18" value="d"> Dmart<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q19" data-question="19">
+                <div class="ques-container">
+
+                    <h2>4) Identify the logo.</h2>
+                    <div class="logo-img">
+                        <img src="https://tinyurl.com/mu43zdmr" alt="logo4">
+                    </div>
+                </div>
+                <input type="radio" name="q19" value="a"> Dominos<br>
+                <input type="radio" name="q19" value="b"> McDonalds<br>
+                <input type="radio" name="q19" value="c"> Pizza Hut<br>
+                <input type="radio" name="q19" value="d"> KFC<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Next">
+            </form>
+            <form class="questionForm" id="q20" data-question="20">
+                <div class="ques-container">
+
+                    <h2>5) Identify the logo.</h2>
+                    <div class="logo-img">
+                        <img src="https://tinyurl.com/2p8fmam6" alt="logo5">
+                    </div>
+                </div>
+                <input type="radio" name="q20" value="a"> Suzuki<br>
+                <input type="radio" name="q20" value="b"> Puma<br>
+                <input type="radio" name="q20" value="c"> Jaguar<br>
+                <input type="radio" name="q20" value="d"> Mercedes<br>
+                <button id="prev" , class="btn btn-primary">previous</button>
+                <input type="submit" class="btn btn-primary" id="submit" value="Submit">
+            </form>
+        </div>
+        <!-- Second round will base upon General Knowledge in which 5 questions will displayed. The duration 
+of this round will be 15 minutes (10 marks).. -->
+
+
+        <div id="results"></div>
+        <div id="campus"></div>
+
+    </div>
+
+    <footer>
+        <h3>For more details visit <a href="https://vit.ac.in" target="_blank">VIT-Vellore</a></h3>
+    </footer>
+
+
+</body>
+
+</html>
