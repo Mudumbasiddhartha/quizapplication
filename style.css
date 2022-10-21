@@ -130,12 +130,18 @@
         margin-top: 10vh;
         margin-bottom: 10vh;
     }
+
     @media only screen and (max-width: 600px) {
-        header h2 {
-            display: flex;
-            margin-left: 0vw;
-            text-align: center;
-            font-size: 1.5rem;
+        header h2{
+            margin-left: 0px;
+            float: left;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        header{
+            text-align: left;
+            
+            overflow: hidden;
         }
         
-    }
+    }    
