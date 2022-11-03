@@ -233,11 +233,11 @@
                 $('#results').html('<h3>Your score is ' + score + ' </h3>');
                 $('#campus').html('<h3>You are admitted in Vellore campus</h3>');
             } else if (score > 7.5 && score < 9.4) {
-                $('#results').html('<h3>Your score is ' + score + ' and you are admitted in Chennai campus</h3><a href="index.html">Take Quiz Again</a>');
+                $('#results').html('<h3>Your score is ' + score + ' and you are admitted in Chennai campus</h3>');
             } else if (score > 6.5 && score < 7.4) {
-                $('#results').html('<h3>Your score is ' + score + ' and you are admitted in Amravati campus</h3><a href="index.html">Take Quiz Again</a>');
+                $('#results').html('<h3>Your score is ' + score + ' and you are admitted in Amravati campus</h3>');
             } else {
-                $('#results').html('<h3>Your score is ' + score + ' and you are not admitted</h3><a href="index.html">Take Quiz Again</a>');
+                $('#results').html('<h3>Your score is ' + score + ' and you are not admitted</h3>');
             }
 
 
