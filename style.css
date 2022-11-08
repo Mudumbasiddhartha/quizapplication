@@ -102,9 +102,9 @@
         overflow: scroll;
     }
 
-    .form-signin .form-floating:focus-within {
+    /* .form-signin .form-floating:focus-within {
         z-index: -1;
-    }
+    } */
 
     .form-signin input[type="email"] {
         margin-bottom: -1px;
